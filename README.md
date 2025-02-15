@@ -9,9 +9,9 @@ This project generates synthetic data for relational datasets using the concept 
 - Applies **Euclidean distance** to establish relationships between records.
 - Uses **synthpop** to generate synthetic data for each extended table independently.
 - Provides example implementations for the following datasets:
-  - `Biodegradability_v1`
-  - `CORA_v1`
   - `DCG_v1`
+  - `CORA_v1`
+  - `Biodegradability_v1`
   - `imdb_MovieLens_v1`
 
 ## Dataset Structure
@@ -46,5 +46,42 @@ The `DCG_v1` dataset consists of multiple tables linked through relational mappi
 graph TD;
     Sentences[Sentences Table] -->|id_sentence| Terms[Terms Table]
 ```
+
+## Relationships in `CORA_v1`
+The `CORA_v1` dataset consists of multiple tables connected by relational links representing paper citations and content relationships.
+
+### Relationship Diagram
+```mermaid
+graph TD;
+    Paper[Paper Table] -->|paper_id| Cites[Cites Table]
+    Paper[Paper Table] -->|paper_id| Content[Content Table]
+```
+
+## Relationships in `Biodegradability_v1`
+The `Biodegradability_v1` dataset consists of multiple tables representing molecules, atoms, bonds, and groups.
+
+### Relationship Diagram
+```mermaid
+graph TD;
+    Molecule[Molecule Table] -->|molecule_id| Atom[Atom Table]
+    Atom[Atom Table] -->|atom_id| Bond[Bond Table]
+    Atom[Atom Table] -->|atom_id| Gmember[Gmember Table]
+    Gmember[Gmember Table] -->|gmember_id| Group[Group Table]
+```
+
+## Relationships in `imdb_MovieLens_v1`
+The `imdb_MovieLens_v1` dataset consists of multiple tables connecting movies, actors, directors, users, and their interactions.
+
+### Relationship Diagram
+```mermaid
+graph TD;
+    Actors[Actors Table] -->|actor_id| Movies2Actors[Movies2Actors Table]
+    Movies[Movies Table] -->|movie_id| Movies2Actors[Movies2Actors Table]
+    Movies[Movies Table] -->|movie_id| Movies2Directors[Movies2Directors Table]
+    Directors[Directors Table] -->|director_id| Movies2Directors[Movies2Directors Table]
+    Movies[Movies Table] -->|movie_id| U2Base[U2Base Table]
+    Users[Users Table] -->|user_id| U2Base[U2Base Table]
+```
+
 
 
