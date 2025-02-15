@@ -44,6 +44,7 @@ The `DCG_v1` dataset consists of multiple tables linked through relational mappi
 ### Relationship Diagram
 ```mermaid
 graph TD;
-    Sentences[Sentences Table | Id, Class (CC)] -->|id_sentence| Terms[Terms Table | Id_Sentence_Id_Term, Term (CC), Id_Sentence, Id_Term (NC)]
+    Sentences[Sentences Table] -->|id_sentence| Terms[Terms Table]
 ```
+
 
