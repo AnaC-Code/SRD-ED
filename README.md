@@ -1,5 +1,5 @@
 # SRD-ED
-# Synthetic Data Generation for Relational Datasets using Euclidean Distance
+# Synthetic Relational Datasets using Euclidean Distance
 
 ## Overview
 This project generates synthetic data for relational datasets using the concept of extended tables and Euclidean distance to connect related records. The synthetic data generation process is powered by the `synthpop` library, which creates synthetic data for individual extended tables.
