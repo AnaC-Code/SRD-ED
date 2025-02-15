@@ -1,0 +1,11 @@
+{
+    "primary_key": "paper_id",
+    "columns": {
+        "paper_id": {
+            "sdtype": "id"
+        },
+        "class_label": {
+            "sdtype": "categorical"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+[
+    {
+        "id":0,
+        "parent_table_name": "molecule",
+        "parent_primary_key": "molecule_id",
+        "child_table_name": "atom",
+        "child_foreign_key": "molecule_id"
+    },
+    {
+        "id":1,
+        "parent_table_name": "atom",
+        "parent_primary_key": "atom_id",
+        "child_table_name": "bond",
+        "child_foreign_key": "atom_id"
+    },
+    {
+        "id":2,
+        "parent_table_name": "atom",
+        "parent_primary_key": "atom_id",
+        "child_table_name": "bond",
+        "child_foreign_key": "atom_id2"
+    },
+    {
+        "id":3,
+        "parent_table_name": "atom",
+        "parent_primary_key": "atom_id",
+        "child_table_name": "gmember",
+        "child_foreign_key": "atom_id"
+    },
+    {
+        "id":4,
+        "parent_table_name": "group",
+        "parent_primary_key": "group_id",
+        "child_table_name": "gmember",
+        "child_foreign_key": "group_id"
+    }
+]

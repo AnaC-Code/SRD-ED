@@ -1,0 +1,12 @@
+{
+    "primary_key": "group_id",
+    "columns": {
+        "type": {
+            "sdtype": "categorical"
+        },
+        "group_id": {
+            "sdtype": "id",
+            "regex_format": "[A-Za-z]{5}"
+        }
+    }
+}

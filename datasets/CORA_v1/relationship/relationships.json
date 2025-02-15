@@ -1,0 +1,23 @@
+[
+    {
+        "id":0,
+        "parent_table_name": "paper",
+        "parent_primary_key": "paper_id",
+        "child_table_name": "cites",
+        "child_foreign_key": "cited_paper_id"
+    },
+    {
+        "id":1,
+        "parent_table_name": "paper",
+        "parent_primary_key": "paper_id",
+        "child_table_name": "cites",
+        "child_foreign_key": "citing_paper_id"
+    },
+    {
+        "id":2,
+        "parent_table_name": "paper",
+        "parent_primary_key": "paper_id",
+        "child_table_name": "content",
+        "child_foreign_key": "paper_id"
+    }
+]

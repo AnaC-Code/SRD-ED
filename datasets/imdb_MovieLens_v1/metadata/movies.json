@@ -1,0 +1,1 @@
+{"primary_key": "movieid", "columns": {"country": {"sdtype": "categorical"}, "year": {"sdtype": "numerical", "computer_representation": "Int64"}, "movieid": {"sdtype": "id"}, "runningtime": {"sdtype": "numerical", "computer_representation": "Int64"}, "isEnglish": {"sdtype": "categorical"}}}

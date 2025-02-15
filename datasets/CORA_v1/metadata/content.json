@@ -1,0 +1,19 @@
+{
+    "primary_key": "paper_id_word_cited_id",
+    "columns": {
+        "word_cited_id": {
+            "sdtype": "categorical"
+        },
+        "paper_id_word_cited_id": {
+            "sdtype": "id",
+            "regex_format": "[A-Za-z]{5}"
+        },
+        "paper_id": {
+            "sdtype": "id"
+        },
+        "add_numerical": {
+            "sdtype": "numerical",
+            "computer_representation": "Int64"
+        }
+    }
+}

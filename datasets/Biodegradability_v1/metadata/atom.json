@@ -1,0 +1,1 @@
+{"primary_key": "atom_id", "columns": {"atom_id": {"sdtype": "id", "regex_format": "[A-Za-z]{5}"}, "type": {"sdtype": "categorical"}, "molecule_id": {"sdtype": "id", "regex_format": "[A-Za-z]{5}"}}}

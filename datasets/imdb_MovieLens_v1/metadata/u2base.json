@@ -1,0 +1,1 @@
+{"primary_key": "userid_movieid", "columns": {"movieid": {"sdtype": "id"}, "userid": {"sdtype": "id"}, "rating": {"sdtype": "numerical", "computer_representation": "Int64"}, "userid_movieid": {"sdtype": "id", "regex_format": "[A-Za-z]{5}"}}}

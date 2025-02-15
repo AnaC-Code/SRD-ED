@@ -1,0 +1,19 @@
+{
+    "primary_key": "userid",
+    "columns": {
+        "age": {
+            "sdtype": "numerical",
+            "computer_representation": "Int64"
+        },
+        "occupation": {
+            "sdtype": "numerical",
+            "computer_representation": "Int64"
+        },
+        "userid": {
+            "sdtype": "id"
+        },
+        "u_gender": {
+            "sdtype": "categorical"
+        }
+    }
+}

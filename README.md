@@ -75,7 +75,7 @@ graph TD;
 The `imdb_MovieLens_v1` dataset consists of multiple tables connecting movies, actors, directors, users, and their interactions.
 
 ### Relationship Diagram
-![imdb_MovieLens_v1](Movie.png)
+![imdb_MovieLens_v1](images/Movie.png)
 
 
 

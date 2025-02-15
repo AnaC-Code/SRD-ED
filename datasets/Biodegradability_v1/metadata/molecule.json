@@ -1,0 +1,21 @@
+{
+    "primary_key": "molecule_id",
+    "columns": {
+        "activity": {
+            "sdtype": "numerical",
+            "computer_representation": "Float"
+        },
+        "mweight": {
+            "sdtype": "numerical",
+            "computer_representation": "Float"
+        },
+        "logp": {
+            "sdtype": "numerical",
+            "computer_representation": "Float"
+        },
+        "molecule_id": {
+            "sdtype": "id",
+            "regex_format": "[A-Za-z]{5}"
+        }
+    }
+}

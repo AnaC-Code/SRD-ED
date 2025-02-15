@@ -1,0 +1,19 @@
+{
+    "primary_key": "id_sentence_id_term",
+    "columns": {
+        "id_sentence_id_term": {
+            "sdtype": "id",
+            "regex_format": "[A-Za-z]{5}"
+        },
+        "term": {
+            "sdtype": "categorical"
+        },
+        "id_sentence": {
+            "sdtype": "id"
+        },
+        "id_term": {
+            "sdtype": "numerical",
+            "computer_representation": "Int64"
+        }
+    }
+}

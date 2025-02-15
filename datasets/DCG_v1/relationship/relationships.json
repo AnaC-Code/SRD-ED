@@ -1,0 +1,9 @@
+[
+    {
+        "id":0,
+        "parent_table_name": "sentences",
+        "parent_primary_key": "id",
+        "child_table_name": "terms",
+        "child_foreign_key": "id_sentence"
+    }
+]

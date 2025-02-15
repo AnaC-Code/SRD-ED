@@ -1,0 +1,44 @@
+[
+    {
+        "id":0,
+        "parent_table_name": "actors",
+        "parent_primary_key": "actorid",
+        "child_table_name": "movies2actors",
+        "child_foreign_key": "actorid"
+    },
+    {
+        "id":1,
+        "parent_table_name": "movies",
+        "parent_primary_key": "movieid",
+        "child_table_name": "movies2actors",
+        "child_foreign_key": "movieid"
+    },
+    {
+        "id":2,
+        "parent_table_name": "movies",
+        "parent_primary_key": "movieid",
+        "child_table_name": "movies2directors",
+        "child_foreign_key": "movieid"
+    },
+    {
+        "id":3,
+        "parent_table_name": "directors",
+        "parent_primary_key": "directorid",
+        "child_table_name": "movies2directors",
+        "child_foreign_key": "directorid"
+    },
+    {
+        "id":4,
+        "parent_table_name": "movies",
+        "parent_primary_key": "movieid",
+        "child_table_name": "u2base",
+        "child_foreign_key": "movieid"
+    },
+    {
+        "id":5,
+        "parent_table_name": "users",
+        "parent_primary_key": "userid",
+        "child_table_name": "u2base",
+        "child_foreign_key": "userid"
+    }
+]

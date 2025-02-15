@@ -1,0 +1,1 @@
+{"primary_key": "actorid", "columns": {"a_gender": {"sdtype": "categorical"}, "actorid": {"sdtype": "id"}, "a_quality": {"sdtype": "numerical", "computer_representation": "Int64"}}}

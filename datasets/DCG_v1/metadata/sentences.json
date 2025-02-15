@@ -1,0 +1,11 @@
+{
+    "primary_key": "id",
+    "columns": {
+        "id": {
+            "sdtype": "id"
+        },
+        "class": {
+            "sdtype": "categorical"
+        }
+    }
+}

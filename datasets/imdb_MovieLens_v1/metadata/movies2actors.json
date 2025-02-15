@@ -1,0 +1,1 @@
+{"primary_key": "movieid_actorid", "columns": {"movieid_actorid": {"sdtype": "id", "regex_format": "[A-Za-z]{5}"}, "cast_num": {"sdtype": "numerical", "computer_representation": "Int64"}, "actorid": {"sdtype": "id"}, "movieid": {"sdtype": "id"}}}

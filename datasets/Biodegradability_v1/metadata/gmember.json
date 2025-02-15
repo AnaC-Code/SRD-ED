@@ -1,0 +1,1 @@
+{"primary_key": "atom_id_group_id", "columns": {"atom_id": {"sdtype": "id", "regex_format": "[A-Za-z]{5}"}, "atom_id_group_id": {"sdtype": "id", "regex_format": "[A-Za-z]{5}"}, "group_id": {"sdtype": "id", "regex_format": "[A-Za-z]{5}"}}}
