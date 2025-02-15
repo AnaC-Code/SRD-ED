@@ -53,8 +53,9 @@ The `CORA_v1` dataset consists of multiple tables connected by relational links 
 ### Relationship Diagram
 ```mermaid
 graph TD;
-    Paper[Paper Table] -->|paper_id| Cites[Cites Table]
-    Paper[Paper Table] -->|paper_id| Content[Content Table]
+    Paper[Paper Table] -->|cited_paper_id| Cites[Cites Table]
+    Paper[Paper Table] -->|citing paper id| Cites[Content Table]
+    Paper[Paper Table] -->|paper id| Content[Content Table]
 ```
 
 ## Relationships in `Biodegradability_v1`
@@ -65,8 +66,9 @@ The `Biodegradability_v1` dataset consists of multiple tables representing molec
 graph TD;
     Molecule[Molecule Table] -->|molecule_id| Atom[Atom Table]
     Atom[Atom Table] -->|atom_id| Bond[Bond Table]
+    Atom[Atom Table] -->|atom_id2| Bond[Bond Table]
     Atom[Atom Table] -->|atom_id| Gmember[Gmember Table]
-    Gmember[Gmember Table] -->|gmember_id| Group[Group Table]
+    Group[Group Table] -->|group_id| Gmember[Gmember Table]
 ```
 
 ## Relationships in `imdb_MovieLens_v1`
