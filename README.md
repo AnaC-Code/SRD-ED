@@ -75,15 +75,7 @@ graph TD;
 The `imdb_MovieLens_v1` dataset consists of multiple tables connecting movies, actors, directors, users, and their interactions.
 
 ### Relationship Diagram
-```mermaid
-graph TD;
-    Actors[Actors Table] -->|actor_id| Movies2Actors[Movies2Actors Table]
-    Movies[Movies Table] -->|movie_id| Movies2Actors[Movies2Actors Table]
-    Movies[Movies Table] -->|movie_id| Movies2Directors[Movies2Directors Table]
-    Directors[Directors Table] -->|director_id| Movies2Directors[Movies2Directors Table]
-    Movies[Movies Table] -->|movie_id| U2Base[U2Base Table]
-    Users[Users Table] -->|user_id| U2Base[U2Base Table]
-```
+![imdb_MovieLens_v1](Movie.png)
 
 
 
