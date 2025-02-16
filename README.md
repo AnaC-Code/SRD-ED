@@ -74,7 +74,7 @@ The project currently supports numerical and categorical columns. The primary an
 There are four datasets available from the SDV library, with a brief explanation of each provided below.
 
 ### `DCG_v1`
-The `DCG_v1` dataset consists of multiple tables linked through relational mappings. The relationships among these tables are established using Euclidean distance for connecting related records. The relationship details are stored in the `relationship/` folder for reference.
+The `DCG_v1` dataset consists of two tables, Sentences and Terms
 
 #### Relationship Diagram
 ```mermaid
