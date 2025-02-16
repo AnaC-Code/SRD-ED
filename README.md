@@ -77,5 +77,14 @@ The `imdb_MovieLens_v1` dataset consists of multiple tables connecting movies, a
 ### Relationship Diagram
 ![imdb_MovieLens_v1](images/Movie.png)
 
+## Running Compare_data.py
+To execute `Compare_data.py`, ensure you are using **Python 12**. This script should be run in a separate environment different from the one used for Python 3.8.
 
+#### Dependencies
+- For `Compare_data.py` (Python 12), install only the `sdv` library:
+  ```sh
+  pip install sdv
+  ```
+
+Ensure that you are using the correct Python environment before executing the script.
 
