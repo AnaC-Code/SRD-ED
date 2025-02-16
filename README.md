@@ -6,8 +6,8 @@ This project generates synthetic data for relational datasets using the concept 
 
 ## Features
 - Utilizes **extended tables** to represent individual tables.
-- Applies **Euclidean distance** to establish relationships between records.
 - Uses **synthpop** to generate synthetic data for each extended table independently.
+- Applies **Euclidean distance** to establish relationships between records.
 - Provides example implementations for the following datasets:
   - `DCG_v1`
   - `CORA_v1`
@@ -23,19 +23,47 @@ Each dataset folder contains the following subdirectories:
 
 The information about `data`, `metadata`, and `relationship` is sourced from datasets obtained via the **SDV library**.
 
-## Requirements
-- **Python 3.8**
-- Dependencies specified in `requirements.txt`
+## Requirements  
 
-## Installation
+The project contains two files: `Synthethic_data.py` and `Compare_data.py`.  
+
+- `Synthethic_data.py` generates synthetic data for a selected dataset using the `synthpop` library, which runs properly in Python 3.8. It also requires the dependencies listed in the `requirements.txt` file.  
+- `Compare_data.py` evaluates the synthetic data using metrics from the `sdv` library, which requires Python 3.12.  
+
+Since each script requires a different Python environment, ensure that you have two separate virtual environments before running the scripts:  
+- One environment for Python 3.8 (for `Synthethic_data.py`).  
+- Another environment for Python 3.12 (for `Compare_data.py`).  
+
+### `Synthethic_data.py`  
+- Requires Python 3.8  
+- Dependencies are specified in `requirements.txt`  
+
+#### Installation  
 ```bash
 pip install -r requirements.txt
 ```
 
-## Running the Code
-Execute the main script to generate synthetic data:
+#### Running the Code  
+Execute the script to generate synthetic data:  
 ```bash
 python Synthethic_data.py
+```
+
+---
+
+### `Compare_data.py`  
+- Requires Python 3.12  
+- Only requires the `sdv` library  
+
+#### Installation  
+```bash
+pip install sdv
+```
+
+#### Running the Code  
+Execute the script to evaluate synthetic data:  
+```bash
+python Compare_data.py
 ```
 
 ## Relationships in `DCG_v1`
@@ -77,14 +105,5 @@ The `imdb_MovieLens_v1` dataset consists of multiple tables connecting movies, a
 ### Relationship Diagram
 ![imdb_MovieLens_v1](images/Movie.png)
 
-## Running Compare_data.py
-To execute `Compare_data.py`, ensure you are using **Python 12**. This script should be run in a separate environment different from the one used for Python 3.8.
 
-#### Dependencies
-- For `Compare_data.py` (Python 12), install only the `sdv` library:
-  ```sh
-  pip install sdv
-  ```
-
-Ensure that you are using the correct Python environment before executing the script.
 
