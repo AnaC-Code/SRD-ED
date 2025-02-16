@@ -73,7 +73,7 @@ The project currently supports numerical and categorical columns. The primary an
 
 There are four datasets available from the SDV library, with a brief explanation of each provided below.
 
-### Relationships in `DCG_v1`
+### `DCG_v1`
 The `DCG_v1` dataset consists of multiple tables linked through relational mappings. The relationships among these tables are established using Euclidean distance for connecting related records. The relationship details are stored in the `relationship/` folder for reference.
 
 #### Relationship Diagram
@@ -82,7 +82,7 @@ graph TD;
     Sentences[Sentences Table] -->|id_sentence| Terms[Terms Table]
 ```
 
-### Relationships in `CORA_v1`
+### `CORA_v1`
 The `CORA_v1` dataset consists of multiple tables connected by relational links representing paper citations and content relationships.
 
 #### Relationship Diagram
@@ -93,7 +93,7 @@ graph TD;
     Paper[Paper Table] -->|paper id| Content[Content Table]
 ```
 
-### Relationships in `Biodegradability_v1`
+### `Biodegradability_v1`
 The `Biodegradability_v1` dataset consists of multiple tables representing molecules, atoms, bonds, and groups.
 
 #### Relationship Diagram
@@ -106,7 +106,7 @@ graph TD;
     Group[Group Table] -->|group_id| Gmember[Gmember Table]
 ```
 
-### Relationships in `imdb_MovieLens_v1`
+### `imdb_MovieLens_v1`
 The `imdb_MovieLens_v1` dataset consists of multiple tables connecting movies, actors, directors, users, and their interactions.
 
 #### Relationship Diagram
